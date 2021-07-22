@@ -1,0 +1,259 @@
+html,body,*{
+    margin: 0;
+    padding: 0;
+ 
+}
+body{
+    background-color: #1F1F1F;
+    margin: 0 auto;
+    height: 100vh;
+    min-height: 500px;
+    max-width: 2000px;
+    font-family: 'Noto Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.head__logo{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    
+}
+.head__logo button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    transition: .4s;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.head__logo button:hover{
+    fill: rgb(32, 19, 19);
+    background-color: #06FF6B;
+    border-radius: 50%;
+    transition: .4s;
+    height: 50px;
+    width: 50px;
+
+}
+
+.head__logo button svg{
+    width: 30px;
+    height: 30px;
+    fill: #fff;
+}
+
+.head__logo p{
+    color: #fff;
+    font-size: 20px;
+    
+}
+.head__nav{
+    width: 50%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+.head__nav ul{
+    list-style: none;
+    
+}
+.head__nav ul li{
+    display: inline-block;
+    position: relative;
+    margin: 0 30px;
+}
+.head__nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: #06FF6B;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: .3s;
+}
+.head__nav ul li:hover:after{
+    width: 100%;
+    transition: .3s;
+}
+.head__nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+/* continer */
+.imgBgi{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 500px;
+    background-image: url('assets/angular_whiteTransparent.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.01;
+}
+.all{
+    display: flex;
+    height: 75vmin;
+    width: 100%;
+    min-height: 400px;
+}
+
+.nav_size{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    min-height: 600px;
+    width: 10%;
+}
+.pos{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main{
+    width: 65%;
+    margin: 0 auto;
+    display: flex;
+    min-height: 300px;
+    justify-content: space-between;
+}
+.main__text{
+    width: 50%;
+    margin-top: 60px;
+}
+.ityped{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;    
+}
+.ityped .test{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: .4ch;
+    color: #fff;
+  
+}
+.ityped-cursor{
+    padding-left: 3px;
+    font-size: 4rem;
+    opacity: 0;
+    -webkit-animation: blink 1s infinite;
+    -moz-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+    animation-direction: alternate;
+}
+.main__text p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    color:#828282;
+}
+.main__image{
+    width: 50%;
+    position: relative;
+}
+.main__image__triangle{
+    position: absolute;
+    width: 200px;
+    height: 190px;
+    top: 35%;
+    left: 50%;
+}
+.main__image__circle{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    top: 58%;
+    left: 75%;
+    animation:round  2s infinite  linear  ;
+}
+.btn__down{
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.main__nav{
+    height: 200px;
+    width: 60px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 0px 16px 5px rgba(4, 255, 135, 0.25);
+}
+
+.main__nav ul {
+    list-style-type: none;
+    
+}
+.main__nav ul li {
+   margin-top: 15px;
+}
+.main__nav ul li a img{
+    width: 30px;
+}
+/* ABOUT ME */
+.about{
+    height: 100vh;
+}
+.about__info{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+}
+.about__info h1 {
+    margin-top: 30px;
+    font-size: 2rem;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 100;
+}
+.about__info p {
+    margin: 0;
+    color: #6D6D6D;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes round{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
