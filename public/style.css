@@ -44,8 +44,7 @@ body{
     transform: translate3d(-50%,-50%,0);
     top:30px;
     left: 50%;
-    opacity: .5;
-    background-color: #fff;
+    background-color: rgb(173, 173, 173);
     z-index: -2;
 }
 .cursor-lazy{

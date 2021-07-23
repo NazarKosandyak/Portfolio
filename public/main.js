@@ -65,8 +65,8 @@ document.addEventListener('mousedown',function(e){
     },1000)
 })
 
-document.addEventListener('mouseup',function(e){
-    cursor.style.background = '#fff'
+document.addEventListener('mouseup',()=>{
+    cursor.style.background = 'rgb(173, 173, 173)';
 })
 
 
