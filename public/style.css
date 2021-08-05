@@ -3,15 +3,16 @@ html,body,*{
     padding: 0;
     cursor: none;
     scroll-behavior: smooth;
+    
 }
 
 body{
     background-color: #1F1F1F;
     margin: 0 auto;
-    height: 100vh;
     min-height: 400px;
     max-width: 2000px;
     font-family: 'Noto Sans', sans-serif;
+    
     
 }
 .newElement{
@@ -139,6 +140,7 @@ header{
     transition: .3s;
 }
 .head__nav ul li a {
+    display: block;
     text-decoration: none;
     color: #fff;
     
@@ -262,6 +264,9 @@ main{
 }
 .main__nav ul li a img{
     width: 30px;
+}
+.btn__down{
+    animation: upp 1s  infinite  linear ;
 }
 /* ABOUT ME */
 .about{
@@ -418,22 +423,22 @@ main{
     background-color: #4A4A4A;
 }
 .skill__stats .item__line_html{
-    width: 85%;
+    width: 0%;
     height: 100%;
     background-color: #06FF6B;
 }
 .skill__stats .item__line_css{
-    width: 80%;
+    width: 0%;
     height: 100%;
     background-color: #06FF6B;
 }
 .skill__stats .item__line_js{
-    width: 55%;
+    width: 0%;
     height: 100%;
     background-color: #06FF6B;
 }
 .skill__stats .item__line_ang{
-    width: 60%;
+    width: 0%;
     height: 100%;
     background-color: #06FF6B;
 }
@@ -952,6 +957,22 @@ footer{
     height: 1px;
     box-shadow: 0px 0px 73px 22px rgba(6, 255, 107, 0.25);
 }
+
+[data-aos="forHtmlText"].aos-animate{
+    width: 85%;
+}
+
+[data-aos="forCssText"].aos-animate{
+    width: 80%;
+}
+
+[data-aos="forJsText"].aos-animate{
+    width: 55%;
+}
+
+[data-aos="forAngularText"].aos-animate{
+    width: 60%;
+}
 @keyframes blink {
     0% {
         opacity: 1;
@@ -982,6 +1003,17 @@ footer{
     }
     100%{
         transform: scale(0);
+    }
+}
+@keyframes upp{
+    0%{
+       
+    }
+    50%{
+        transform: translateY(10px)
+    }
+    100%{
+        transform: translateY(0px)
     }
 }
 

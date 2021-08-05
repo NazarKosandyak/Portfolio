@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="aos/aos.css">
     <!-- FAV -->
     <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
@@ -148,15 +149,15 @@
                     <g>
                 </svg>
             </button>
-            <p>Nazar.K</p>
+            <p class="titleName">Nazar.K</p>
         </div>
         <div class="head__nav">
             <ul>
-                <li><a class="hov" href="">Home</a></li>
-                <li><a class="hov" href="">About</a></li>
-                <li><a class="hov" href="">Skills</a></li>
-                <li><a class="hov" href="">Portfolio</a></li>
-                <li><a class="hov" href="">Keep in touch</a></li>
+                <li><a class="hov elem1" href="">Home</a></li>
+                <li><a class="hov elem2" href="">About</a></li>
+                <li><a class="hov elem3" href="">Skills</a></li>
+                <li><a class="hov elem4" href="">Portfolio</a></li>
+                <li><a class="hov elem5" href="">Keep in touch</a></li>
             </ul>
         </div>
     </header>
@@ -194,11 +195,11 @@
             </svg>
     </button>
     <div class="about">
-        <div class="about__info">
+        <div class="about__info" data-aos="fade-right" data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
             <h1>ABOUT ME</h1>
             <p>My introduction</p>
         </div>
-        <div class="about__content">
+        <div class="about__content" data-aos="fade-right"  data-aos-anchor-placement="center-bottom" data-aos-easing="ease-in-out-quart" data-aos-duration="1000" data-aos-anchor-placement="center" >
             <div class="about__content__photo">
                 <img src="assets/photo3249825453521872815.jpg" alt="">
             </div>
@@ -225,12 +226,12 @@
         </div>
     </div>
     <div class="skills">
-        <div class="skill__info">
+        <div class="skill__info" data-aos="fade-right"  data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
             <h1>SKILLS</h1>
             <p>My technical level</p>
         </div>
         <div class="skill_title">
-            <div class="skill_title_content">
+            <div class="skill_title_content" data-aos="fade-left" data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-anchor-placement="top-bottom" >
                 <img src="assets/coding (1).svg" alt="">
                 <ul>
                     <li>Frontend engineer</li>
@@ -246,7 +247,7 @@
                         <p>85%</p>
                     </div>
                     <div class="item__line">
-                        <div class="item__line_html"></div>
+                        <div class="item__line_html" data-aos="forHtmlText" data-aos-duration="700" data-aos-easing="ease-out-back" ></div>
                     </div>
                 </div>
                 <div class="item">
@@ -255,7 +256,7 @@
                         <p>80%</p>
                     </div>
                     <div class="item__line">
-                        <div class="item__line_css"></div>
+                        <div class="item__line_css" data-aos="forCssText" data-aos-duration="700" data-aos-easing="ease-out-back"></div>
                     </div>
                 </div>
                 <div class="item">
@@ -264,7 +265,7 @@
                         <p>55%</p>
                     </div>
                     <div class="item__line">
-                        <div class="item__line_js"></div>
+                        <div class="item__line_js" data-aos="forJsText" data-aos-duration="700" data-aos-easing="ease-out-back"></div>
                     </div>
                 </div>
                 <div class="item">
@@ -273,10 +274,10 @@
                         <p>60%</p>
                     </div>
                     <div class="item__line">
-                        <div class="item__line_ang"></div>
+                        <div class="item__line_ang" data-aos="forAngularText" data-aos-duration="700" data-aos-easing="ease-out-back"></div>
                     </div>
                 </div>
-                <button class="item__more"><span></span>MORE</button>
+                <button class="item__more" data-aos="fade-up"  data-aos-delay="300" data-aos-easing="ease-in-out-back"  data-aos-duration="1200" data-aos-anchor-placement="bottom-bottom"><span></span>MORE</button>
             </div>
             <div class="stlCode">
                 <img src="assets/coding (2).svg" alt="">
@@ -285,11 +286,11 @@
 
     </div>
     <div class="qualification">
-        <div class="qualification__info">
+        <div class="qualification__info" data-aos="fade-right"  data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
             <h1>QUALIFICATION</h1>
             <p>My personal journey</p>
         </div>
-        <div class="qualification__switcher">
+        <div class="qualification__switcher" data-aos="zoom-in"   data-aos-duration="500"  data-aos-delay="500"  data-aos-easing="ease-in-out-back">
             <div class="qualification__switcher__education">
                 <button>
                     <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
@@ -311,7 +312,7 @@
                 </button>
             </div>
         </div>
-        <div class="qualification__box">
+        <div class="qualification__box" data-aos="fade-right" >
             <div class="qualification__box__left">
                 <div class="qualification__box__left__item">
                     <p>Student at “Lviv Polytechnic”</p>
@@ -453,11 +454,11 @@
         <img class="starTwo" src="assets/star.svg" alt="">
     </div>
     <div class="portfolio">
-        <div class="portfolio__info">
+        <div class="portfolio__info" data-aos="fade-right" data-aos-easing="ease-in-out-back"data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
             <h1>PORTFOLIO</h1>
             <p>Most recent works</p>
         </div>
-        <div class="swiper-container mySwiper">
+        <div class="swiper-container mySwiper" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" data-aos-offset="-50" data-aos-duration="1500">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="swiper-slide__photo">
@@ -624,12 +625,12 @@
         </div>
     </div>
     <div class="contact">
-        <div class="contact__info">
+        <div class="contact__info" data-aos="fade-right" data-aos-easing="ease-in-out-back" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
             <h1>CONTACT</h1>
             <p>Keep in touch</p>
         </div>
-        <div class="contact__box">
-            <div class="contact__box__links">
+        <div class="contact__box" >
+            <div class="contact__box__links" data-aos="fade-right">
                 <ul>
                     <li><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 473.806 473.806"
@@ -754,15 +755,15 @@
         </div>
         <footer>
             <div class="footer__left">
-                <h1>Nazar.K</h1>
-                <h2>FE Angular</h2>
+                <h1 data-aos="fade-right">Nazar.K</h1>
+                <h2 data-aos="fade-left">FE Angular</h2>
                 <p><svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="m256 512c-68.38 0-132.667-26.629-181.02-74.98-48.351-48.353-74.98-112.64-74.98-181.02s26.629-132.667 74.98-181.02c48.353-48.351 112.64-74.98 181.02-74.98s132.667 26.629 181.02 74.98c48.351 48.353 74.98 112.64 74.98 181.02s-26.629 132.667-74.98 181.02c-48.353 48.351-112.64 74.98-181.02 74.98zm0-472c-119.103 0-216 96.897-216 216s96.897 216 216 216 216-96.897 216-216-96.897-216-216-216zm90.313 307.924c7.81-7.811 7.811-20.474 0-28.284-7.812-7.811-20.475-7.81-28.284 0-35.092 35.09-92.188 35.092-127.28 0-16.998-16.999-26.36-39.6-26.36-63.64s9.362-46.641 26.36-63.64c35.092-35.092 92.188-35.09 127.28 0 7.811 7.811 20.474 7.811 28.284 0s7.81-20.474 0-28.284c-50.688-50.687-133.162-50.686-183.848 0-24.555 24.554-38.077 57.2-38.077 91.924s13.522 67.37 38.077 91.924c25.343 25.343 58.633 38.015 91.924 38.015s66.581-12.672 91.924-38.015z" />
                         </svg>Kosandiak Nazar. All right reserved</p>
             </div>
-            <div class="footer__right">
+            <div class="footer__right" data-aos="fade-down" data-aos-duration="1000"  data-aos-anchor-placement="bottom-bottom">
                 <div class="footer__right__text">
                     You can find me here
                 </div>
@@ -805,7 +806,8 @@
         </footer>
         <div class="shadowFooter"></div>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script>
         let typed = new Typed('.test', {
@@ -820,22 +822,7 @@
         });
     </script>
     <script src="swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            cssMode: true,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
-            },
-            mousewheel: true,
-            keyboard: true,
-        });
-    </script>
+    <script src="aos/aos.js"></script>
     <script src="main.js"></script>
 
 </body>
